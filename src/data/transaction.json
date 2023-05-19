@@ -1,38 +1,38 @@
 [
     {
       "id": 1,
-      "name": "Teguh predtor",
+      "name": "predtor",
       "image": "bri.jp",
-      "Day": "26/Hari"
+      "Trip": "4D/3N Overland Jakarta B..."
     },
     {
       "id": 2,
       "name": "saya",
       "image": "bri.jpg",
-      "Day": "26/Hari"
+      "Trip": "4D/3N Overland Jakarta B..."
     },
     {
       "id": 3,
       "name": "robot",
       "image": "bni.jpg",
-      "Day": "26/Hari"
+      "Trip": "4D/3N Overland Jakarta B..."
     },
     {
       "id": 4,
       "name": "predator",
       "image": "danamon.jpg",
-      "Day": "0/Hari"
+      "Trip": "4D/3N Overland Jakarta B..."
     },
     {
       "id": 5,
       "name": "Amerika",
       "image": "bri.jpg",
-      "Day": "0/Hari"
+      "Trip": "4D/3N Overland Jakarta B..."
     },
     {
       "id": 6,
       "name": "bangsat",
       "image": "bca.jpg",
-      "Day": "0/Hari"
+      "Trip": "4D/3N Overland Jakarta B..."
     }
   ]

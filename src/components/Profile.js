@@ -5,25 +5,24 @@ import "react-bootstrap";
 // import "../assets/css/detail-account.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import Profile from "./image/Ellipse.png";
-// import { CgProfile } from "react-icons/cg";
-// import { FiMail } from "react-icons/fi";
-// import { RiVipFill } from "react-icons/ri";
-// import { TbGenderBigender } from "react-icons/tb";
-// import { BsFillTelephoneFill } from "react-icons/bs";
-// import { SiGooglemaps } from "react-icons/si";
-// import Button from "react-bootstrap/Button";
+import Footer from '../components/Footer'
+import Historytrip from "./Historytrip";
+
 function Profile() {
     return (
+      <>
       <div
-        style={{ background: "black", height: "90.5vh", margin:"20px" }}
-        className="d-flex align-items-center justify-content-center">
+
+        style={{ background:"E5E5E5",  height: "90.5vh", margin:"20px" }}
+        className=" d-flex align-items-center justify-content-center">
         <div
+        // className="bg-secondary"
           style={{
-            background: "#1f1f1f",
+            background: "white",
             padding: "25px",
             borderRadius: "5px",
             width: "40rem",
+            border:"1px solid black",
           }}>
           <Row>
             <Col sm={6} style={{ marginTop: "-5px", paddingRight: "55px", }}>
@@ -34,8 +33,8 @@ function Profile() {
               <div className="d-flex mb-3">
               <img src={require( "../image/Vector.png")} className="me-3" style={{height:"40px"}}></img>
                 <span style={{ marginTop: "-3px" }}>
-                  <p className="text-white" style={{ fontSize: "" }}>
-                    Anjenggggg
+                  <p className="text-dark" style={{ fontSize: "" }}>
+                    Userkun
                   </p>
                   <p
                     className="text-muted"
@@ -48,7 +47,7 @@ function Profile() {
               <div className="d-flex mb-3">
               <img src={require( "../image/Vector2.png")} className="me-3" style={{height:"30px"}}></img>
                 <span style={{ marginTop: "-3px" }}>
-                  <p className="text-white" style={{ fontSize: "14px" }}>
+                  <p className="text-dark" style={{ fontSize: "14px" }}>
                     boy@mail.com
                   </p>
                   <p
@@ -59,61 +58,37 @@ function Profile() {
                 </span>
               </div>
   
-              <div className="d-flex mb-3">
-              <img src={require( "../image/Vector3.png")} className="me-3" style={{height:"40px"}}></img>
-                <span style={{ marginTop: "-3px" }}>
-                  <p className="text-white" style={{ fontSize: "14px" }}>
-                    Active
-                  </p>
-                  <p
-                    className="text-muted"
-                    style={{ marginTop: "-15px", fontSize: "12px" }}>
-                    Status
-                  </p>
-                </span>
-              </div>
   
-              <div className="d-flex mb-3">
+              <div className="d-flex mb-3 text-dark">
               <img src={require( "../image/Vector4.png")} className="me-3" style={{height:"40px"}}></img>
                 <span style={{ marginTop: "-3px" }}>
-                  <p className="text-white" style={{ fontSize: "14px" }}>
-                    Male
+                  <p className="text-dark" style={{ fontSize: "14px" }}>
+                    0812xxxxxxxxxxxx
                   </p>
                   <p
                     className="text-muted"
                     style={{ marginTop: "-15px", fontSize: "12px" }}>
-                    Gender
+                    Mobile Phone
                   </p>
+                
                 </span>
               </div>
   
               <div className="d-flex mb-3">
               <img src={require( "../image/Vector5.png")} className="me-3" style={{height:"40px"}}></img>
                 <span style={{ marginTop: "-3px" }}>
-                  <p className="text-white" style={{ fontSize: "14px" }}>
-                    0812-xxx-xxxx
+                  <p className="text-dark" style={{ fontSize: "14px" }}>
+                    jalan kaki di sawangan
                   </p>
                   <p
                     className="text-muted"
                     style={{ marginTop: "-15px", fontSize: "12px" }}>
-                    Mobile Phone
+                    Alamat
                   </p>
                 </span>
               </div>
   
-              <div className="d-flex">
-             <img src={require( "../image/Vector5.png")} className="me-3 w-3 h-3" style={{height:"40px"}}></img>
-                <span style={{ marginTop: "-3px" }}>
-                  <p className="text-white" style={{ fontSize: "14px" }}>
-                    0812-xxxx-xxxx
-                  </p>
-                  <p
-                    className="text-muted"
-                    style={{ marginTop: "-15px", fontSize: "12px" }}>
-                    Mobile Phone
-                  </p>
-                </span>
-              </div>
+              
             </Col>
             <Col sm={6} style={{ paddingLeft: "10px" }}>
               <img
@@ -128,7 +103,7 @@ function Profile() {
                 }}></img>
               <button
                 className=" mt-3"
-                style={{ background: "red", border: "none",
+                style={{ background: "yellow", border: "none",
                 position: "absolute;",
 width: "280px",
 height: "50px",
@@ -139,7 +114,10 @@ top: "521px", }}>
             </Col>
           </Row>
         </div>
+
       </div>
+        <Historytrip/>
+      </>
     );
   }
   

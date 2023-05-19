@@ -15,7 +15,7 @@ const Login = () => {
       localStorage.setItem('loggedIn', true);  //menetapkan nilai true pda key logedin ini unuk menandai bahwa si pengguna udah berhasil login
       localStorage.setItem('isAdminn', true); //mengetahui bahwa pengguna yang login  adlah admin
       setShowModal(false);
-      window.location="/"
+      window.location="/Transaction"
     } else if (username === 'user@gmail' && password === 'u') {
       localStorage.setItem('loggedIn', true);
       localStorage.setItem('isAdmin', false);

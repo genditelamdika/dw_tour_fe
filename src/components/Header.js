@@ -7,6 +7,7 @@ import { Dropdown, NavDropdown } from 'react-bootstrap';
 import Dropdownn from "../image/Ellipse1.png"
 import bill from "../image/bill.png"
 import userr from "../image/userr.png"
+import journey from "../images/journey.png"
 import logout from "../image/logout.png"
 import filmm from "../image/filmm.png"
 function Header() {
@@ -27,9 +28,9 @@ function Header() {
     localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('isAdmin');
   };
-   return <nav>
-          <img src={require( "../images/navba1.png")} alt="gambar"></img>
-          {/* <Home/> */}
+   return <nav >
+          <img style={{width:"100%"}} src={require( "../images/navba1.png")} alt="gambar"></img>
+          
     <div className="left-side" style={{position:"absolute"}} >
         <ul>
           <li> 
@@ -43,7 +44,7 @@ function Header() {
       {/* <img  src={require( "../image/netflic.png")} alt="gambar"></img> */}
       <div className="right-side">
   {isLoggedIn ? (
-    <Dropdown className="dark">
+    <Dropdown className="white">
       <Dropdown.Toggle className="">
       <img
             type="button"
@@ -54,31 +55,31 @@ function Header() {
           />
       </Dropdown.Toggle>
       {handleDropdown && (
-        <Dropdown.Menu className="bg-dark">
+        <Dropdown.Menu>
           {isAdmin ? (
             <>
 
-          <Dropdown.Item  className="bg-dark d-flex align-items-center gap-2 text-white fw-semibold fs-6 pb-2 border-bottom border-white">
-            <img src={bill}/>
-            <Link to="/Profile"className="text-white fw-semibold text-decoration-none">
+          <Dropdown.Item  >
+              <img src={userr}/>
+            <Link to="/Profile">
               Profile</Link>
               </Dropdown.Item>
-              <Dropdown.Item  className="bg-dark d-flex align-items-center gap-2 text-white fw-semibold fs-6 pb-2 border-bottom border-white">
-              <img src={userr}/>
-            <Link to="/Pay"className="text-white fw-semibold text-decoration-none">
+              <Dropdown.Item  >
+            <img src={bill}/>
+            <Link to="/Pay">
               Pay</Link>
               </Dropdown.Item>
              </> 
           ) : (
             <>
-              <Dropdown.Item className="bg-dark" style={{
+              <Dropdown.Item className="bg-white" style={{
 
               }}>
-              <img src={filmm}/>
-            <Link to="/Film"className="text-white fw-semibold text-decoration-none">
-              Film </Link>
+              <img src={journey}/>
+            <Link to="/Trip">
+              Trip </Link>
           </Dropdown.Item>
-              <Dropdown.Item className="bg-dark">
+              <Dropdown.Item className="bg-white">
               <img src={userr}/>
             <Link to="/Transaction">
               Transaction </Link>
@@ -87,7 +88,7 @@ function Header() {
 
           )}
           <NavDropdown.Divider />
-         <NavDropdown.Item className="bg-dark text-white" style={{padding:"10px"}} onClick={handleLogout}>
+         <NavDropdown.Item className="bg-white text-dark" style={{padding:"10px"}} onClick={handleLogout}>
           <img src={logout}/>
           Logout 
          </NavDropdown.Item>
